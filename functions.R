@@ -229,3 +229,23 @@ CI.MCMC.by.path <- function(x, alpha = 0.05) {
   res[,,3] <- apply(x, c(1,2), function(x) quantile(x, 1 - alpha/2))
   return(res)
 }
+
+
+
+
+# Beautiful colours
+beau_palette <- c("#00338D", "#0091DA", "#6D2077",
+                  "#0091DA", "#00A3A1", "#EAAA00",
+                  "#43B02A", "#C6007E", "#753F19",
+                  "#9B642E", "#9D9375", "#E3BC9F",
+                  "#E36877")
+
+
+# edit classic theme
+beau_theme <- theme_classic() + # KPMG theme is based on classic theme
+  theme(text = element_text(color = "black"), # Text is black by default
+        axis.ticks = element_line(linetype = 0), # no axis ticks
+        axis.line.y = element_line(linetype = 0), # no vertical axis
+        panel.grid.major.y = element_line(linetype = 1, # grey horizontal lines
+                                          color = "darkgrey"),
+        plot.title = element_text(hjust = 0)) # Left adjustment of title
