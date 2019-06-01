@@ -1,23 +1,14 @@
 # markov_thesis
 
-This repository was created to share the text and all of the materials (scripts, data, etc.) that comprise my Master thesis 'Interval Estimation of Transition Matrices Given Limited Data Sample'
+This repository was created to share the text and all of the materials (scripts, data, etc.) that comprise my Master thesis 'Interval Estimation of Transition Matrices Given Limited Data Sample'. As a result, by running the scripts of the project one might easily replicate (accurate to the seed) the results of the work.
 
-The scripts are organized the following way:
+The thesis might be of use for risk analysts and statisticians, since within the paper we test:
 
-In folder [General](general/README.md) you can find general specifications, data and functions for the experiment.
+* Adequacy and convergence of methods proposed for confidence estimation of Markov chain migration matrices (See [Experiment 1](experiment_1)).
+* Build the relationship between the volume of data needed and the 
 
-In folder [Experiment 1](experiment_1/README.md) you can find scripts required to carry out Experiment 1 of the thesis. Generally, there are 3 subfolders:
+If you are interest in diving into the experiments carried out in the thesis, please proceed to the [Repository contents](contents.md).
 
-* [Experiment 1.1](experiment_1_1/README.md), where we test adequacy of Wald, bootstrap, and BMCMC confidence (credibility) intervals;
-* [Experiment 1.2](experiment_1_2/README.md), where we test the influence of an imbalanced sample on the results;
-* [Experiment 1.3](experiment_1_3/README.md), where we test if the proposed BMCMC method converges to a stationary distribution;
+**Warning!** Since the project involves a huge number of simulations, it takes a significant amount of time to carry out the experiments locally. I would personally appreciate if one could optimize the calculations or suggest other ideas for project improvement.
 
-In folder [Experiment 2](experiment_2/README.md) you can find scripts required to carry out Experiment 2 of the thesis. It includes 2 subfolders:
-
-* [Experiment 3.1](experiment_1_1/README.md), where we ...;
-* [Experiment 3.2](experiment_1_2/README.md), where we xxx;
-
-In folder [Experiment 3](experiment_3/README.md) you can find scripts required to carry out Experiment 3 of the thesis.
-
-* [Experiment 3.1](experiment_1_1/README.md), where we test xxx;
-* [Experiment 3.2](experiment_1_2/README.md), where we test xxx.
+Should you have any questions or ideas, please don't hesitate to contact me at [my e-mail](mailto:markov.anton.a@gmail.com).
