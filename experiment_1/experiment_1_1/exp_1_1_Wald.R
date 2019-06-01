@@ -40,21 +40,26 @@ for (zet in 1:length(my.Ns)) {
 
 
 ## Block 3. Calculation ====
+# Cohort Method
+tr.m <- array(NA, c(5, 5, m))
+for (j in 1:m) tr.m[,,j] <- get.m.coh(rs[[j]][,1], rs[[j]][,2], 5)
+
 
 # Bootstrap results array
-bootstrap.m <- array(NA, c(5, 5, 3, m)) # MCMC results
-my.list <- list()
+results.w.int <- array(NA, c(5, 5, 3, m)) # MCMC results
 timer = now()
 
 # Calculation
-for (zet in 1:m) {
-  cat(paste("Iteration:", zet, "- "))
-  bootstrap.m[,,,zet] <- CI.Bootstrap(rs[[zet]][1:n, 1], 
-                                      rs[[zet]][1:n, 2], 
-                                      n = 10000)
+for (i in 1:length(my.Ns)) {
+  cat(paste("Iteration:", i, "- "))
+  results.w.int[, , , i] <- array(t(mapply(CI.W, 
+                                           PD = tr.m[,,i], 
+                                           N = my.Ns[i])), 
+                                  c(5, 5, 3))
   print(now() - timer)
 }
 
 # Table print
-res <- (bootstrap.m[,,1,] < array(rep(trans.m), c(5, 5, m))) & (array(rep(trans.m), c(5, 5, m)) < bootstrap.m[,,3,])
+res <- (results.w.int[,,1,] < array(rep(trans.m), c(5, 5, m))) & 
+  (array(rep(trans.m), c(5, 5, m)) < results.w.int[,,3,])
 apply(res, c(1,2), mean)
