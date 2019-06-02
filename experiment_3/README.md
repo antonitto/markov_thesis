@@ -24,6 +24,6 @@ Since we seek to demonstrate how PD distributions could be used in confidence es
 ## Experiment 3.2
 
 Imagine that we have a significant number of states within a Markov chain (26 rating notches or 92 days past due states).
-In the most likely case we will not have enough data to estimate all $26 \times 26$ or $92 \times 92$ transition probabilities. In this case we usually group our data in segments (e.g. group "AAA+", "AAA" and "AAA-" rating together in "AAA" group).
+In the most likely case we will not have enough data to estimate all 26x26 or 92x92 transition probabilities. In this case we usually group our data in segments (e.g. group "AAA+", "AAA" and "AAA-" rating together in "AAA" group).
 
 In [Experiment 3.2](experiment_3_2) we propose a methodology to tackle the problem of optimal data segmentation. We use the approach proposed in Experiment 3.1 to build ECL confidence interval for each data segmentation and eventually choose the segmentation that minimizes the width of 95% interval for ECL.
