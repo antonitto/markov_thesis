@@ -1,6 +1,6 @@
 # Short Introduction
 
-This repository was created to share the text and all of the materials (scripts, data, etc.) that comprise my Master thesis 'Interval Estimation of Transition Matrices Given Limited Data Sample' (See .pdf [here](paper\thesis.pdf)). As a result, by running the scripts of the project one might easily replicate (accurate to the seed) the results of the work.
+This repository was created to share the text and all of the materials (scripts, data, etc.) that comprise my Master thesis 'Interval Estimation of Transition Matrices Given Limited Data Sample' (See .pdf [here](paper/thesis.pdf)). As a result, by running the scripts of the project one might easily replicate (accurate to the seed) the results of the work.
 
 The thesis might be of use for risk analysts and statisticians, since within the paper we conduct the following:
 
