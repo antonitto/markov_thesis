@@ -4,19 +4,20 @@
 
 [Experiment 3.1](experiment_3_1) proposes methodology to conduct confidence estimation of Expected credit loss (ECL) using multivariate distribution of probabilities of default. According to Basel standards and IFRS 9, the general formula for ECL is the following:
 
-$$ECL = PD \cdot LGD \cdot EAD \cdot D,$$
+
+- <img src="https://latex.codecogs.com/gif.latex?ECL = PD \cdot LGD \cdot EAD \cdot D,/> 
 
 where 
 
-$ECL$ - Expected Credit Loss; 
+**ECL** - Expected Credit Loss; 
 
-$PD$ - Probability of Default; 
+**PD** - Probability of Default; 
 
-$LGD$ - Loss Given Default; 
+**LGD** - Loss Given Default; 
 
-$EAD$ - Exposure at Default; 
+**EAD** - Exposure at Default; 
 
-$D$ - Discount; 
+**D** - Discount; 
 
 In a general case we should use a multivariate distribution of all ECL components.
 Since we seek to demonstrate how PD distributions could be used in confidence estimation of ECL, in this experiment we assume LGD, EAD and D as constants (65%, 85% and 1/(1 + 10%) respectively).
