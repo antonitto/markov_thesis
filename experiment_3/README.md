@@ -4,8 +4,7 @@
 
 [Experiment 3.1](experiment_3_1) proposes methodology to conduct confidence estimation of Expected credit loss (ECL) using multivariate distribution of probabilities of default. According to Basel standards and IFRS 9, the general formula for ECL is the following:
 
-
-- <img src="https://latex.codecogs.com/gif.latex?ECL = PD \cdot LGD \cdot EAD \cdot D,/> 
+![equation](http://latex.codecogs.com/gif.latex?ECL=PD\cdotLGD\cdotEAD\cdotD,)
 
 where 
 
